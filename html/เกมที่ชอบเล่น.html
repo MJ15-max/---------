@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกมที่ชอบเล่น</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        /* สไตล์ของ Navbar */
+        nav {
+            background: linear-gradient(45deg, #004085, #007bff);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.3em;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        header {
+            background: linear-gradient(45deg, #007bff, #00c3ff);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #004085;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 2em;
+            color: #007bff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .game-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h4 {
+            font-size: 1.8em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .game-card p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 123, 255, 0.9);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.1em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#">🏠 หน้าหลัก</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B8%A7.html">📒 ประวัติส่วนตัว</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A3%E0%B8%B2.html">📞 ติดต่อ</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0.html">💡 ทักษะ</a>
+        
+    </nav>
+
+    <header>
+        เกมที่ชอบเล่น
+    </header>
+
+    <div class="container">
+        <h2>เกมที่ฉันชอบเล่น</h2>
+
+        <h3>🎮 เกมยอดนิยมที่ฉันเล่นบ่อย</h3>
+
+        <div class="game-list">
+            <div class="game-card">
+                <img src="/img/มายคราฟ.avif" alt="minecraft">
+                <h4>Minecraft</h4>
+                <p>เกมแบทเทิลรอยัลที่ต้องสู้รอดเพื่อเป็นผู้ชนะในสนามรบ!</p>
+            </div>
+            <div class="game-card">
+                <img src="/img/Valorant_a27b53.webp" alt="Valorant">
+                <h4>Valorant</h4>
+                <p>เกมยิงปืนในรูปแบบ 5v5 ที่ขับเคลื่อนโดยเหล่าเอเจนท์ผู้มากฝีมือและเป็นเกม FPS ที่เน้นการยิงที่แม่นยำพร้อมกับใช้ความสามารถอันเป็นเอกลักษณ์ของตัวละคร</p>
+            </div>
+            <div class="game-card">
+                <img src="/img/Call Of Duty.jpg" alt="Call Of Duty: Warzone">
+                <h4>Call Of Duty: Warzone</h4>
+                <p>Warzone ให้ผู้เล่นกระโดดร่มได้ในแผนที่จำนวนมากในโหมดการเล่นหลักคือBattle RoyaleและPlunder</p>
+            </div>
+            <div class="game-card">
+                <img src="/img/Genshin Impact.jpg" alt="Genshin Impact">
+                <h4>Genshin Impact</h4>
+                <p>เกมนี้มีจุดเด่นด้านโลกที่กว้างใหญ่และระบบธาตุที่เป็นตัวชูโรงของเกมนี้</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

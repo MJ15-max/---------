@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+
+        /* ✅ กำหนดโทนสีและฟ้อนต์ */
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #E3F2FD; /* ฟ้าพาสเทล */
+            color: #333;
+        }
+
+        /* ✅ Header */
+        header {
+            background: linear-gradient(135deg, #64b5f6, #42a5f5);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 2.2em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 15px 15px;
+        }
+
+        /* ✅ Navbar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #90caf9;
+            padding: 12px;
+            border-radius: 15px;
+            margin: 15px auto;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #01579b;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(1.05);
+        }
+
+        /* ✅ กล่องข้อมูล */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ✅ รูปโปรไฟล์ */
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #42a5f5;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* ✅ Typography */
+        h2 {
+            font-size: 2.2em;
+            color: #01579b;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #0277bd;
+            margin-top: 20px;
+            font-size: 1.5em;
+            background: #bbdefb;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* ✅ Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #42a5f5;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.1em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px 15px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>ประวัติส่วนตัว</header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81.html">🏠 หน้าหลัก</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A3%E0%B8%B2.html">📞 ติดต่อ</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0.html">💡 ทักษะ</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99.html">🎮 เกมที่ชอบ</a>
+    </nav>
+
+    <div class="container">
+        <img src="/img/18160.jpg" alt="รูปโปรไฟล์" class="profile-img">
+        <h2>พีรวัส แพรกปาน</h2>
+
+        <h3>🔹 ชื่อจริงและชื่อเล่น</h3>
+        <p><strong>ชื่อจริง:</strong> พีรวัส แพรกปาน</p>
+        <p><strong>ชื่อเล่น:</strong> มาร์ค</p>
+
+        <h3>📍 ที่อยู่</h3>
+        <p><strong>ที่อยู่:</strong>272 หมู่ที่ 8 ตำบลเขาขาว อำเภอทุ่งสง<br>จังหวัดนครศรีธรรมราช 80110</p>
+    </div>
+</body>
+</html>

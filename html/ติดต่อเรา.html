@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff;
+            color: #333;
+        }
+
+        /* 🔹 Navbar Style 🔹 */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(45deg, #007bff, #00c3ff);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 15px;
+            display: inline-block;
+            position: relative;
+            transition: 0.3s ease-in-out;
+        }
+
+        /* 🔹 เส้นใต้เวลาหน้าไหนเปิดอยู่ 🔹 */
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: white;
+            transition: 0.3s ease-in-out;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        /* 🔹 Header Style 🔹 */
+        header {
+            background: linear-gradient(45deg, #007bff, #00c3ff);
+            color: white;
+            text-align: center;
+            padding: 60px;
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 70px; /* เผื่อพื้นที่สำหรับ Navbar */
+        }
+
+        /* 🔹 Main Container 🔹 */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: #004085;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            text-align: left;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        /* 🔹 Footer Style 🔹 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 123, 255, 0.9);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.1em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔹 Navbar Menu 🔹 -->
+    <nav>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81.html">🏠 หน้าหลัก</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B8%A7.html">📒 ประวัติส่วนตัว</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B0.html">💡 ทักษะ</a>
+        <a href="http://127.0.0.1:5500/html/%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99.html">🎮 เกมที่ชอบ</a>
+    </nav>
+
+    <header>
+        ติดต่อเรา
+    </header>
+
+    <div class="container">
+        <h2>📞 ข้อมูลติดต่อ</h2>
+        <div class="contact-info">
+            <p><strong>📧 อีเมล:</strong> mcatster1@gmail.com</p>
+            <p><strong>📱 โทรศัพท์:</strong> 082-248-3201</p>
+            <p><strong>📍 ที่อยู่:</strong> 272 ตำบลเขาขาว อำเภอทุ่งสง จังหวัดนครศรีธรรมราช</p>
+            <p><strong>Facebook:</strong> Regulus Novelist</p>
+            <p><strong>Instagram:</strong> angpangaemn</p>
+        </div>
+    </div>
+
+</body>
+</html>
